@@ -22,8 +22,13 @@ Script
 -- "set Path=%Python_Home%;%Path%" and provide the BatchFile path inside your automation project that is
 --"BatchFiles\AllLibrary.bat" and click on apply and save
 
-
 4.RUN PROJECT FROM PYTEST
+-->click on configure inside 'PythonAPITesting' project in Jenkins-->click on Source Code Management and scroll down to build
+-->now click on Execute Windows Batch Command and Enter below script in the command window
+--> "pytest testcases_foldername" for example pytest DataDrivenFramework and in the next line write "exit 0" so that
+build will shows pass and in the console output it shows test cases passed and failed result
+-->click on apply and save
 
 5.INTEGRATE ALLURE REPORTING
+
 
