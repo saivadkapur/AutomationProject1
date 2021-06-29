@@ -30,5 +30,16 @@ build will shows pass and in the console output it shows test cases passed and f
 -->click on apply and save
 
 5.INTEGRATE ALLURE REPORTING
+-->before configuring Allure inside jenkins make sure you have added below command into your 'AllLibrary.bat' File in your project
+--add "pip install allure-pytest" inside AllLibrary Project and also make sure you have "Reports" Folder created
+--inside your project and push the changes to github repo
+--Now go to 'PythonAPITesting' project in the jenkins click on configure--go to build--Execute Windows Batch Command and
+--enter below scripts in the command window this will let the jenkins to know where to generate the json report
+--"pytest --alluredir=./Reports DataDrivenFramework"
+--"exit 0"
+--> now go to Post-Build Actions and select 'Allure Report" from the menu
+--and now enter reports folder name "Reports" inside the Path field and click apply and save - this will let the jenkins
+know where are the Json reports files are located after the Post-Build
+
 
 
