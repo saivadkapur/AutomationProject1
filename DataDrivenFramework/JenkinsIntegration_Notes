@@ -1,0 +1,33 @@
+ROBOT FRAMEWORK - CODE MANAGEMENT - JENKINS INTEGRATION
+
+SETUP JENKINS
+-Setup JAVA
+-Download Jenkins War File into your system and copy the location of the downloaded war file
+-Start War file with port number - open command line tool and navigate to jenkins.war download folder
+and run below command tp start war file with port number
+  java -jar "jenkins.war" --httpPort=8080
+after executing above command you will be getting a password to access jenkins
+
+-install default set of plugins - now open the browser and access this url "localhost:8080"
+Enter password and then install suggested plugins
+now enter username, password, email and proceed to completion
+now you are jenkins is ready to use
+
+STEPS FOR INTEGRATING YOUR PROJECT WITH JENKINS
+-go to localhost:8080
+-once you are into jenkins GUI
+-click on manage jenkins --> global tool configuration-->click on add jdk-->Enter JAVA_HOME-->uncheck install java path
+-->and enter path of your java jdk folder and click save
+now config GIT path
+-click on manage jenkins --> global tool configuration-->go to path to git executable-->enter git path with /git.exe extension
+-->click save and apply
+now config python and python script path
+-click on manage jenkins -->configure systems-->check environment variables-->add-->enter name as Python_Home and
+enter value by giving Python.exe file path and also the python scripts folder path
+-Similarly add another environment variable by giving name as Python_Scripts and value will be the python script folder path
+--> click apply
+-->Make sure you copy chromedriver.exe file and paste in to your python/scripts folder
+
+
+
+
