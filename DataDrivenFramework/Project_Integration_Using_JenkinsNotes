@@ -1,0 +1,20 @@
+#HOW TO PROJECT INTEGRATION USING JENKINS
+
+1. FETCH PROJECT FROM GITHUB - Create job to fetch project from github
+--click on 'new item' in jenkins-->enter new item name like 'PythonSeleniumAutomation'-->select free style project & click OK
+-->Now enter description and click apply
+-->now click on Source Code management and provide github project URL-->once project url is added click on add button in credentials
+-->from the add dropdown select click on Jenkins and now provide github username and password and click on apply
+-->now to credentials dropdown and select the username and password and click on apply
+
+2.SET ENVIRONMENT VARIABLES
+-->go to 'PythonSeleniumAutomation' project and click on configure-->now scroll down to Build-->Select 'Execute Windows Batch
+command' from Add Build Step dropdown now in the command section enter below lines of script
+-- set Path=%Python_Home%;%Path%  and click on apply and save
+
+3.INSTALL LIBRARIES
+
+4.RUN PROJECT FROM PYTEST
+
+5.INTEGRATE ALLURE REPORTING
+
