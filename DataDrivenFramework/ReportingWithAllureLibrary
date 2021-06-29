@@ -27,7 +27,7 @@ Once you everything is install and ready
     pytest --alluredir 'give the path of the Reports folder inside the project' testcase_folderName
 3. at this point you should see reports been generated in json formated files under Reports folder
 4. now we have to convert all these json file to HTML report files
-5. now open cmd tool on your system and enter below command
+5. now open new cmd tool terminal on your system and enter below command
     allure serve 'give the path of the Reports folder inside the project'
 6. this open a html page on the browser with the results
     The HTML report file also can be found inside your system in a temp folder and the path of that folder
