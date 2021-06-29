@@ -28,6 +28,13 @@ enter value by giving Python.exe file path and also the python scripts folder pa
 --> click apply
 -->Make sure you copy chromedriver.exe file and paste in to your python/scripts folder
 
+SETUP ALLURE REPORTING ON JENKINS
+-Install Allure Plugin --> go to Manage Jenkins-->go to manage plugins-->go to avaliable plugins-->search allure-->select
+-->install without restart
+-Download Allure Command Line Tool -->first download the zip file for allure command line tool and extract and copy the
+path of allure folder from the system
+-Configure command line tool with jenkins --go manage jenkins-->global tool configuration--> go to allure command line-->
+enter value as allure-->uncheck i install-->enter value as path of the downloaded allure file in your system-->click apply
 
 
 
