@@ -13,6 +13,15 @@ command' from Add Build Step dropdown now in the command section enter below lin
 -- set Path=%Python_Home%;%Path%  and click on apply and save
 
 3.INSTALL LIBRARIES
+-->in Jenkins create a new item with a name like 'PythonAPITesting' using free style project
+-->Enter description to the newly added item and click apply
+-->now click on Source Code Management-->select GIT and give the github project URL-->now select username and password from the
+credentials dropdown menu
+-->now scroll down to build and select Execute Windows Batch Command from the menu and in the command window enter below
+Script
+-- "set Path=%Python_Home%;%Path%" and provide the BatchFile path inside your automation project that is
+--"BatchFiles\AllLibrary.bat" and click on apply and save
+
 
 4.RUN PROJECT FROM PYTEST
 
