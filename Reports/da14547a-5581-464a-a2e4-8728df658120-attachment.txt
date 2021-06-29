@@ -1,0 +1,3 @@
+330072
+{'status': 'true', 'msg': 'Add  data success'}
+{"status":"true","data":{"first_name":"testing","middle_name":"k112","last_name":"world","date_of_birth":"12/28/1965","TechnicalDetails":[{"id":13254,"language":["java","c++"],"yearexp":"2","lastused":"2020","st_id":"330072"}],"Address":[{"Permanent_Address":{"House_Number":null,"City":null,"State":null,"Country":null,"PhoneNumber":null},"Current_Address":null,"stId":"330072"},{"Permanent_Address":{"House_Number":null,"City":null,"State":null,"Country":null,"PhoneNumber":null},"Current_Address":null,"stId":"330072"}]}}

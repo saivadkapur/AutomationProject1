@@ -1,0 +1,35 @@
+Allure Reporting
+
+Allure is an open source framework used to create test execution reports
+Any report is generated in two steps
+
+Step-1:
+During the test execution a small library called adapter attached to testing framework saves information
+about executed tests to json format
+
+Step-2:
+during the report generation json format files are transformed to HTML report. This can be done with a command line
+tool, a plugin for CI or build tool
+
+ALLURE INSTALLATION PROCESS
+Step 1: pip install allure-pytest
+Step 2: Setup command line tool for converting json files to HTML report
+        install java 8+
+        install node.js
+        install command line tool
+        npm install -g allure-commandline --save-dev
+
+Once you everything is install and ready
+
+#INSIDE IDE
+1. now create a directory called 'Reports' inside the project
+2. open the project terminal and run the below command
+    pytest --alluredir 'give the path of the Reports folder inside the project' testcase_folderName
+3. at this point you should see reports been generated in json formated files under Reports folder
+4. now we have to convert all these json file to HTML report files
+5. now open cmd tool on your system and enter below command
+    allure serve 'give the path of the Reports folder inside the project'
+6. this open a html page on the browser with the results
+    The HTML report file also can be found inside your system in a temp folder and the path of that folder
+    can be obtained from cmd
+

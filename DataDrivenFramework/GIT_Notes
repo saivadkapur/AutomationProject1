@@ -1,0 +1,55 @@
+#GIT is Source Code Management Tool
+#it used for - Track Changes in the file, Manage Source, Versioning, Branching, Compare Code,Merge Branch, Compare Branches etc
+
+#Install GIT Bash in your system
+#now configure GIT Bash by creating username and password
+#to create username open gitbash cmd line tool and enter below command
+#git config --global user.name "user_name" enter
+#to check the user name use this command git config user.name
+#now config email id
+#git config --global user.email "xyz@abc.com" enter
+#To check all the configuration use git config --list
+
+#HOW TO CRAETE LOCAL REPOSITORY
+#Now Create Local Repository
+#first go to git bash create a repository folder at your desired location in your system
+#use command mkdir folder_name to create folder
+#now to make this folder a local repository go into the repository folder and enter below command
+#git init
+#once the above command is executed then your local repository is ready to use
+#git status gives the information about any 'UNTRACKED' files, any 'STAGED' files ready to commit
+#git add file_name or . --> is used to add all the untracked files to staging
+#now the files are add they are in staged status and at this point you either commit them or move them back to untracked
+#now use the below command to commit all the staged files into the repository
+# git commit -m "message about the changes you are commiting" and enter
+# if you want to move the staged file to untrack file below is the command used
+# git reset HEAD file_name
+# git log command is used to get all the commits details
+# if you want to see the updated changes in a particular file then use below command to see the differences
+# git diff file_name
+#if you want to discard the updated changes from the file then use below command
+# git checkout -- file_name
+# use below command to check whether local repository is attached to its remote repository or not
+#git remote -v
+# Use below command to attach local repository with its Remote Repository
+# git remote add origin "url_of_your_remote_repository.git"
+#Once the above command is executed used below command to make sure they are attached
+# git remote -v
+#once the above command is executed and local repo is attached to remote repo then you see
+#two urls one for 'FETCHING' and one for 'PUSHING'
+#Use below command to PUSH code to Remote Repository
+# git push origin master
+
+#HOW TO CLONE FROM REMOTE REPOSITORY
+#use the below command to get the remote repo code into to your local machine
+# git clone "url_oftherepository_you_want_to_pull_into_yourlocal.git"
+# clone url can be get from gitbash
+# command 'ls' is used to give the files information of particular directory
+
+#HOW TO ADD A NEW FILES AND UPDATE EXISTING FILES IN LOCAL REPO
+
+
+
+
+
+

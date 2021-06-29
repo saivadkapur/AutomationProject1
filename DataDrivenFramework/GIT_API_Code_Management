@@ -1,0 +1,12 @@
+API Testing - Code Management-Create Batch File
+
+1. create batch file with all required libraries
+Batch files are used to hold the required libraries like Requests, json, jsonpath, openpyxl etc so that when you are trying to
+execute your test cases using Jenkin this batch file is used to install all these libraries in the batch file
+
+Create a directory in your project give any name like "BatchFiles" now open a file in your system and start adding all the
+libraries you think that are used for executing your test cases like add "pip install pytest", "pip install json" in the notepad file
+and save the file into the "BatchFiles" folder with .bat extension "AllLibrary.bat"
+
+2. place that file in project itself
+
