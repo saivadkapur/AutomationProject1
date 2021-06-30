@@ -1,0 +1,31 @@
+#ROBOT FRAMEWORK
+--> it is generic test automation framework for acceptance testing
+--> it has easy to use tabular syntax which utilizes the keyword-driven testing approach
+--> libraries implemented either with python or java
+
+#ADVANTAGES OF ROBOT FRAMEWORK
+1. Free Open Source
+2. Simple Tabular Syntax/easy syntax
+3. fast development with minimum coding efforts
+4. Default reports with detailed information
+5. detailed logs
+6. generic test libraries/lots of libraries/allow to extend libraries
+7. web testing,swing,SWT,Windows GUI,databases,SSH,Telnet etc
+8. distributes structure
+
+#API TESTING TESTING USING ROBOT FRAMEWORK
+**Installation Process***
+1.setup python
+2.setup pycharm
+3.setup intellibot plugin - used to write robot test cases over pycharm
+4.configure PIP
+5.Install robot framework-requests and its dependencies via PIP
+            pip install -U requests
+            pip install -U robotframework-requests
+6.Install robotframework-jsonlibrary
+            pip install jsonpath_rw
+            pip install jsonpath_rw_ext
+            pip install robotframework-jsonlibrary
+
+
+
